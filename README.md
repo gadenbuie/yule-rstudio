@@ -4,6 +4,8 @@
 
 ![](images/mockup-rstudio.jpg)
 
+## &#x1F385; &#x1F936; 'Tis the season to be jolly!
+
 Bring yuletide cheer and seasons greetings to your [favorite R IDE](https://rstudio.com). Based on the [Yule tmTheme](https://tmtheme-editor.herokuapp.com/#!/editor/theme/Yule) and modified to fit in well with RStudio Dark Mode. It's surprisingly pleasant and merrily festive!
 
 ![](images/floating-rstudio.png)
