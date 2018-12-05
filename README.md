@@ -2,7 +2,7 @@
 
 ### A Holiday Theme for RStudio
 
-![](images/mockup-rstudio.jpg)
+![](images/mockup-rstudio.png)
 
 ## &#x1F385; &#x1F936; 'Tis the season to be jolly!
 
