@@ -50,7 +50,7 @@
 }
 
 .ace_heading {
-  color: #39B81F;
+  color: #f0c85b;
   font-weight: 700;
 }
 
@@ -78,6 +78,10 @@
 .ace_keyword {
   color: #39B81F;
 
+}
+
+.ace_markup.ace_href {
+  color: #DE6262;
 }
 
 .ace_keyword.ace_operator {
@@ -124,6 +128,10 @@
   100 {
     background-color: #ff0010;
   }
+}
+
+.ace_list, .ace_markup.ace_list {
+  color: #39B81F;
 }
 
 .ace_constant.ace_numeric {
