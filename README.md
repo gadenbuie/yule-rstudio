@@ -27,3 +27,19 @@ You'll need RStudio version 1.2. Grab the [preview version here](https://www.rst
     &#x1F4FB; turn on [SomaFM's Christmas Lounge](https://somafm.com/christmas/), 
     
     &#x1F4BB; and enjoy coding by the open fire.
+
+
+#### Download with R
+
+Use this code to download the theme file straight into the RStudio themes directory.
+
+```r
+# I've only tested on Mac
+library(fs)
+rsthemes_dir <- path_home(".R", "rstudio", "themes")
+dir_create(rsthemes_dir)
+download.file(
+  "https://git.io/yule-rstudio",
+  fs::path(rsthemes_dir, "Yule-RStudio.rstheme")
+)
+```
