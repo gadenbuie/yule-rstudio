@@ -34,7 +34,6 @@ You'll need RStudio version 1.2. Grab the [preview version here](https://www.rst
 Use this code to download the theme file straight into the RStudio themes directory.
 
 ```r
-# I've only tested on Mac
 library(fs)
 rsthemes_dir <- path_home_r(".R", "rstudio", "themes")
 dir_create(rsthemes_dir)
