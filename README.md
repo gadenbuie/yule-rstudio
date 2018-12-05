@@ -40,6 +40,6 @@ rsthemes_dir <- path_home(".R", "rstudio", "themes")
 dir_create(rsthemes_dir)
 download.file(
   "https://git.io/yule-rstudio",
-  fs::path(rsthemes_dir, "Yule-RStudio.rstheme")
+  path(rsthemes_dir, "Yule-RStudio.rstheme")
 )
 ```
