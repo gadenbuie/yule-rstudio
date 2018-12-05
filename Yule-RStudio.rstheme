@@ -175,8 +175,7 @@
 
 .ace_support.ace_class {
   font-style: italic;
-  color: rgba(222, 98, 98, 1.00);
-
+  color: #39b81f;
 }
 
 .ace_support.ace_type {
