@@ -18,27 +18,18 @@ Featuring magical additions such as a candy cane style line highlight and a blin
 
 You'll need RStudio version 1.2. Grab the [preview version here](https://www.rstudio.com/products/rstudio/download/preview/).
 
-1. Download [Yule-RStudio.rstheme](Yule-RStudio.rstheme) and place it in `~/.R/rstudio/themes`. 
+1. Run the following code in RStudio to download and apply the theme.
 
-2. In the RStudio appearance settings, select the _Yule RStudio_ editor theme. 
+   ```r
+   rstudioapi::addTheme("https://git.io/yule-rstudio", apply = TRUE)
+   ```
 
-3. &#x2615; Make a cup of hot coco,
+1. &#x2615; Make a cup of hot coco,
 
     &#x1F4FB; turn on [SomaFM's Christmas Lounge](https://somafm.com/christmas/), 
     
     &#x1F4BB; and enjoy coding by the open fire.
 
+#### Manual Installation
 
-#### Download with R
-
-Use this code to download the theme file straight into the RStudio themes directory.
-
-```r
-library(fs)
-rsthemes_dir <- path_home_r(".R", "rstudio", "themes")
-dir_create(rsthemes_dir)
-download.file(
-  "https://git.io/yule-rstudio",
-  path(rsthemes_dir, "Yule-RStudio.rstheme")
-)
-```
+If the steps above don't work, you can manually download the [Yule-RStudio.rstheme](Yule-RStudio.rstheme) file and place it in `.R/rstudio/themes` in your R home directory (see `path.expand("~")`). Then, in the RStudio appearance settings, select the _Yule RStudio_ editor theme. 
