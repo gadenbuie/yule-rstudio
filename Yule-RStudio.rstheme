@@ -17,10 +17,6 @@
   color: #ede0ce;
 }
 
-.ace_cursor {
-  color: #ede0ce;
-}
-
 .ace_marker-layer .ace_selection {
   background: #50575f80;
 }
@@ -96,20 +92,26 @@
 
 .ace_constant.ace_language, .ace_constant{
   color: #DE6262;
-
 }
 
 .normal-mode .ace_cursor {
   border: 0!important;
-
-  animation-name: color;
+  animation-name: xmas-background-colors;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-timing-function: step-start;
+  animation-timing-function: steps;
   opacity: 0.75;
 }
 
-@keyframes color {
+.ace_cursor {
+  color: #ff0010;
+  animation-name: xmas-colors;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+}
+
+@keyframes xmas-background-colors {
   0% {
     background-color: #ff00a9;
   }
@@ -127,6 +129,27 @@
   }
   100 {
     background-color: #ff0010;
+  }
+}
+
+@keyframes xmas-colors {
+  0% {
+    color: #ff00a9;
+  }
+  20% {
+    color: #7c3eff;
+  }
+  40% {
+    color: #64f3f0;
+  }
+  60% {
+    color: #4fe818;
+  }
+  80% {
+    color: #ffc400;
+  }
+  100 {
+    color: #ff0010;
   }
 }
 

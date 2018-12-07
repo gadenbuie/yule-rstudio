@@ -10,7 +10,7 @@ Bring yuletide cheer and seasons greetings to your [favorite R IDE](https://rstu
 
 ![](images/floating-rstudio.png)
 
-Featuring magical additions such as a candy cane style line highlight and a blinking Christmas-light (vim) cursor:
+Featuring magical additions such as a candy cane style line highlight and a blinking Christmas-light cursor:
 
 <p align="center"><img src="images/blinking-cursor.gif"/></p>
 
