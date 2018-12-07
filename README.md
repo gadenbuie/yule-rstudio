@@ -21,7 +21,9 @@ You'll need RStudio version 1.2. Grab the [preview version here](https://www.rst
 1. Run the following code in RStudio to download and apply the theme.
 
    ```r
-   rstudioapi::addTheme("https://git.io/yule-rstudio", apply = TRUE)
+   yule_theme <- fs::path_temp("Yule-RStudio", ext = "rstheme")
+   download.file("https://git.io/yule-rstudio", yule_theme)
+   rstudioapi::addTheme(yule_theme, apply = TRUE)
    ```
 
 1. &#x2615; Make a cup of hot coco,
