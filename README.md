@@ -35,3 +35,28 @@ You'll need RStudio version 1.2. Grab the [preview version here](https://www.rst
 #### Manual Installation
 
 If the steps above don't work, you can manually download the [Yule-RStudio.rstheme](Yule-RStudio.rstheme) file and place it in `.R/rstudio/themes` in your R home directory (see `path.expand("~")`). Then, in the RStudio appearance settings, select the _Yule RStudio_ editor theme. 
+
+### Disclaimer: This theme may waste some CPU cycles in the spirit of the holidays!
+
+This theme adds an animation to the regular and vim normal mode cursors that may increase your CPU usage.
+To disable animations, edit the theme file in `~/.R/rstudio/themes/Yule-RStudio.rstheme`
+
+```r
+rstudioapi::navigateToFile(
+  fs::path_home_r(".R", "rstudio", "themes", "Yule-RStudio.rstheme")
+)
+```
+
+Find the CSS blocks for `.ace_cursor` and `.normal-mode .ace_cursor` and comment out the lines starting with `animation-*`.
+
+```css
+.ace_cursor {
+  color: #ff0010;
+  /*
+  animation-name: xmas-colors;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  */
+}
+```
