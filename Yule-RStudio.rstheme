@@ -50,6 +50,10 @@
   font-weight: 700;
 }
 
+.ace_invisible {
+	color: rgba(150, 180, 130, 0.3);
+}
+
 .ace_constant.ace_language.ace_boolean.ace_text {
   font-style: italic;
 }
